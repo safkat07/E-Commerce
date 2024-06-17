@@ -1,0 +1,31 @@
+import React from 'react'
+import MaxwidthWrapper from './MaxwidthWrapper'
+import { FiUser } from "react-icons/fi";
+import { FaRegHeart } from "react-icons/fa";
+import { IoBagHandleOutline } from "react-icons/io5";
+import { IoSearchOutline } from "react-icons/io5";
+
+const MiddleNavbar = () => {
+    return (
+        <div className='py-7 border-b'>
+            <MaxwidthWrapper>
+                <div className='flex justify-between items-center'>
+                    <div className='text-5xl font-semibold text-neutral-600'>
+                        Ekka.com
+                    </div>
+                    <div className='w-1/3 relative'>
+                        <input type='text' placeholder='search prodcuts...' className='w-full pl-5 rounded-md py-2.5 border border-blue-500' />
+                        <IoSearchOutline className='absolute text-neutral-600 text-2xl right-[5%] top-[25%]' />
+                    </div>
+                    <div className='flex  text-3xl gap-7 font-semibold'>
+                        <FiUser />
+                        <FaRegHeart />
+                        <IoBagHandleOutline />
+                    </div>
+                </div>
+            </MaxwidthWrapper>
+        </div>
+    )
+}
+
+export default MiddleNavbar
