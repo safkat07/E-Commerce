@@ -7,7 +7,7 @@ import { FaSortAmountDown } from "react-icons/fa";
 const MainNavLinks = () => {
 
     return (
-        <div className='py-5'>
+        <div className='py-2'>
             <MaxwidthWrapper>
                 <div className='flex justify-between items-center'>
                     <div className='text-4xl cursor-pointer'>

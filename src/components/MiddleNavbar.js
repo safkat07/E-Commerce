@@ -14,7 +14,7 @@ const MiddleNavbar = () => {
                         Ekka.com
                     </div>
                     <div className='w-1/3 relative'>
-                        <input type='text' placeholder='search prodcuts...' className='w-full pl-5 rounded-md py-2.5 border border-blue-500' />
+                        <input type='text' placeholder='search prodcuts...' className='w-full focus:outline-none pl-5 rounded-md py-2.5 border border-blue-500' />
                         <IoSearchOutline className='absolute text-neutral-600 text-2xl right-[5%] top-[25%]' />
                     </div>
                     <div className='flex  text-3xl gap-7 font-semibold'>

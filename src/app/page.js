@@ -16,18 +16,18 @@ import Image from "next/image";
 export default function Home() {
   return (
     <main>
-      {/* <Banner />
-      <TopCollection />
-      <NewArrivals />
-      <TopCategories />
-      <LimitedOffers />
-      <TopVendors />
-      <Delivery />
-      <SuperOffer />
-      <NewTrending />
-      <ClientReview />
-      <Brands />
-      <InstagramFeeds /> */}
+      <Banner />
+      {/* <TopCollection /> */}
+      {/* <NewArrivals /> */}
+      {/* <TopCategories /> */}
+      {/* <LimitedOffers /> */}
+      {/* <TopVendors /> */}
+      {/* <Delivery /> */}
+      {/* <SuperOffer /> */}
+      {/* <NewTrending /> */}
+      {/* <ClientReview /> */}
+      {/* <Brands /> */}
+      {/* <InstagramFeeds /> */}
     </main>
   );
 }
