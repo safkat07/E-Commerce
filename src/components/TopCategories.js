@@ -57,18 +57,19 @@ const TopCategories = () => {
                 <HeadingTitle title="Top Categories" />
                 <PragraphText text="Browse The Collection of Top Categories" />
 
-                <div className="flex py-7 flex-col md:flex-row gap-8">
-                    <div className="w-full md:w-1/3 space-y-7">
+                <div className="flex  m-auto py-7 flex-col lg:flex-row gap-8">
+                    <div className="w-full grid lg:grid-cols-1 grid-cols-2 gap-1.5 md:gap-2 lg:w-1/4 xl:space-y-0">
+
                         {categories.map(category => (
                             <div
                                 key={category.id}
-                                className={`p-4 flex items-center space-x-4 rounded-lg cursor-pointer transition-all duration-300 ${selectedCategory.id === category.id ? 'bg-blue-500 text-white' : 'bg-gray-100'}`}
+                                className={`lg:p-4 px-2 py-1.5 flex  items-center lg:space-x-5 rounded-lg cursor-pointer transition-all duration-300 ${selectedCategory.id === category.id ? 'bg-blue-500 text-white' : 'bg-gray-100'}`}
                                 onClick={() => setSelectedCategory(category)}
                             >
                                 <div className="text-3xl">{category.icon}</div>
                                 <div>
                                     <div className="font-bold text-lg">{category.categoryName}</div>
-                                    <div className="text-sm">{category.productCount} Products</div>
+                                    <div className="text-xs">{category.productCount} Products</div>
                                 </div>
                             </div>
                         ))}
