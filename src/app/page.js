@@ -17,7 +17,7 @@ export default function Home() {
   return (
     <main>
       <Banner />
-      {/* <TopCollection /> */}
+      <TopCollection />
       {/* <NewArrivals /> */}
       {/* <TopCategories /> */}
       {/* <LimitedOffers /> */}

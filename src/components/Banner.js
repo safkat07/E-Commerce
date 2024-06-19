@@ -54,7 +54,7 @@ const Banner = () => {
             >
                 {data1.map((item) => (
                     <SwiperSlide key={item.id} >
-                        <Image alt='' className='brightness-50 w-full object-cover object-top' src={item.image} />
+                        <Image alt='' width={1920} height={800} className='brightness-50 w-full object-cover object-top' src={item.image} />
                         <MaxwidthWrapper>
                             <div className='absolute text-neutral-200 md:top-1/3 top-10'>
                                 <h1 className='lg:text-8xl md:text-5xl text-2xl font-semibold'>
