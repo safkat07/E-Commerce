@@ -63,11 +63,11 @@ const Slider = () => {
             <div className="relative w-full h-auto overflow-hidden">
                 <div className="flex transition-transform duration-500" style={{ transform: `translateX(-${currentIndex * 100}%)` }}>
                     {products.map((product) => (
-                        <div key={product.id} className="w-full py-20 px-5 flex-shrink-0 bg-white border rounded shadow flex">
-                            <div className="w-1/2 h-80 bg-gray-200 flex items-center justify-center mr-4">
+                        <div key={product.id} className="w-full py-10 px-5 flex-shrink-0 bg-white border rounded shadow flex md:flex-row flex-col">
+                            <div className="md:w-1/2 w-full h-80 bg-gray-200 flex items-center justify-center mr-4">
                                 <span className="text-gray-500 text-xl">765 X 850</span>
                             </div>
-                            <div className="w-1/2 flex flex-col justify-center">
+                            <div className="md:w-1/2 w-full flex flex-col justify-center">
                                 <h3 className="text-xl font-semibold">{product.title}</h3>
                                 <div className="flex items-center my-2">
                                     {/* <div className="text-red-500">{'★'.repeat(product.reviews)}{'☆'.repeat(5 - product.reviews)}</div> */}
