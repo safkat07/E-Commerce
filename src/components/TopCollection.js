@@ -16,7 +16,7 @@ const TopCollection = () => {
     const products = [
         {
             "name": "Round Neck T-Shirt",
-            "old_price": "$27.00",
+            "old_price": "",
             "new_price": "$22.00",
             "discount": "20%",
             "rating": 4,
@@ -108,7 +108,7 @@ const TopCollection = () => {
                             for children
                         </li>
                     </ul>
-                    <div className='grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 py-10 gap-7 justify-center items-center'>
+                    <div className='grid xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-2 grid-cols-1 py-10 gap-7 justify-center items-center'>
                         {products.map((product, index) => (
                             <MainProductCard
                                 key={index}

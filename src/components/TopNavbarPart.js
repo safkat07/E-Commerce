@@ -8,10 +8,6 @@ import { MdCurrencyExchange } from "react-icons/md";
 import { LuLanguages } from "react-icons/lu";
 
 
-
-
-
-
 const TopNavbarPart = () => {
     return (
         <div className='w-full  p-2 border-b border-gray-300'>

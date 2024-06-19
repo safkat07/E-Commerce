@@ -25,9 +25,9 @@ const NewArrivals = () => {
     return (
         <div className='sm:py-7 py-10'>
             <MaxwidthWrapper >
-                <div className='grid  lg:grid-cols-2 grid-cols-1 gap-2'>
+                <div className='grid  xl:grid-cols-2 grid-cols-1 gap-5 lg:gap-2'>
                     {
-                        newArrival.map((prodcust, index) => <TrendingCard key={index} {...prodcust}></TrendingCard>)
+                        newArrival.map((prodcust, index) => <TrendingCard key={index} btnText={"Order Now"} {...prodcust}></TrendingCard>)
                     }
                 </div>
             </MaxwidthWrapper>

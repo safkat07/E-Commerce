@@ -54,7 +54,6 @@ const MainNavLinks = () => {
                     </div>
                 </div>
             </MaxwidthWrapper>
-
             <div className={`h-screen  top-0 lg:w-2/6 w-3/4 fixed transition-all duration-700 bg-neutral-200 text-black/50 ${open ? "left-0" : "-left-full"}`}>
                 <div className='p-10 '>
                     <div className='flex justify-between items-center'>

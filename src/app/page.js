@@ -19,7 +19,7 @@ export default function Home() {
       <Banner />
       <TopCollection />
       <NewArrivals />
-      {/* <TopCategories /> */}
+      <TopCategories />
       {/* <LimitedOffers /> */}
       {/* <TopVendors /> */}
       {/* <Delivery /> */}

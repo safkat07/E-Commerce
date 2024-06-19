@@ -41,7 +41,6 @@ const Banner = () => {
 
     return (
         <div className='relative '>
-
             <Swiper
                 spaceBetween={30}
                 effect={'fade'}
