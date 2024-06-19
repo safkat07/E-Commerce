@@ -117,6 +117,12 @@ const TopCollection = () => {
                         ))}
                     </div>
                 </div>
+                <div className='flex flex-col text-xl font-semibold  cursor-pointer justify-center items-center'>
+                    Shop All Collection
+                    <div className='border-b-2 border-black md:w-[30%] w-1/2 lg:w-[15%] '>
+
+                    </div>
+                </div>
             </MaxwidthWrapper>
         </div>
     )

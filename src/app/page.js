@@ -18,7 +18,7 @@ export default function Home() {
     <main>
       <Banner />
       <TopCollection />
-      {/* <NewArrivals /> */}
+      <NewArrivals />
       {/* <TopCategories /> */}
       {/* <LimitedOffers /> */}
       {/* <TopVendors /> */}
