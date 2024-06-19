@@ -1,16 +1,24 @@
-import React from 'react'
+"use client"
+
+import React, { useState } from 'react'
 import MaxwidthWrapper from './MaxwidthWrapper'
 import { HiOutlineViewGrid } from "react-icons/hi";
 import Link from 'next/link';
 import { FaSortAmountDown } from "react-icons/fa";
+import { RiCloseLargeFill } from "react-icons/ri";
+
 
 const MainNavLinks = () => {
+    const [open, setOpen] = useState(false)
+    const toggleOpen = () => {
+        setOpen(!open)
+    }
 
     return (
-        <div className='py-2'>
+        <div className='py-2 relative'>
             <MaxwidthWrapper>
                 <div className='flex justify-between items-center'>
-                    <div className='text-4xl cursor-pointer'>
+                    <div onClick={toggleOpen} className='text-4xl cursor-pointer'>
                         <HiOutlineViewGrid />
                     </div>
                     <div>
@@ -46,6 +54,17 @@ const MainNavLinks = () => {
                     </div>
                 </div>
             </MaxwidthWrapper>
+
+            <div className={`h-screen  top-0 w-2/6 fixed transition-all duration-700 bg-neutral-200 text-black/50 ${open ? "left-0" : "-left-full"}`}>
+                <div className='p-10 '>
+                    <div className='flex justify-between items-center'>
+                        <p className='text-2xl'>
+                            Category
+                        </p>
+                        <RiCloseLargeFill onClick={toggleOpen} className='size-5 cursor-pointer font-semibold text-black' />
+                    </div>
+                </div>
+            </div>
         </div>
     )
 }
