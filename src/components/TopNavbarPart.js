@@ -14,9 +14,9 @@ import { LuLanguages } from "react-icons/lu";
 
 const TopNavbarPart = () => {
     return (
-        <div className='w-full h-10 p-2 border-b border-gray-300'>
+        <div className='w-full  p-2 border-b border-gray-300'>
             <MaxwidthWrapper>
-                <div className='flex items-center justify-between'>
+                <div className='flex lg:flex-row flex-col lg:gap-y-0 gap-y-1.5 items-center justify-between'>
                     <div className='flex items-center gap-2'>
                         <BiLogoFacebook className='size-6 cursor-pointer bg-neutral-100/65 border rounded-full text-gray-500  ' />
                         <TiSocialTwitter className='size-6 cursor-pointer bg-neutral-100/65  border rounded-full text-gray-500  ' />

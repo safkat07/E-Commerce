@@ -15,13 +15,13 @@ const MainNavLinks = () => {
     }
 
     return (
-        <div className='py-2 relative'>
+        <div className='py-2 z-[10] relative'>
             <MaxwidthWrapper>
                 <div className='flex justify-between items-center'>
                     <div onClick={toggleOpen} className='text-4xl cursor-pointer'>
                         <HiOutlineViewGrid />
                     </div>
-                    <div>
+                    <div className='lg:block hidden '>
                         <ul className='flex items-center gap-5'>
                             <Link className=' font-medium hover:text-blue-500 transition-all uppercase' href="/">
                                 Home
@@ -55,7 +55,7 @@ const MainNavLinks = () => {
                 </div>
             </MaxwidthWrapper>
 
-            <div className={`h-screen  top-0 w-2/6 fixed transition-all duration-700 bg-neutral-200 text-black/50 ${open ? "left-0" : "-left-full"}`}>
+            <div className={`h-screen  top-0 lg:w-2/6 w-3/4 fixed transition-all duration-700 bg-neutral-200 text-black/50 ${open ? "left-0" : "-left-full"}`}>
                 <div className='p-10 '>
                     <div className='flex justify-between items-center'>
                         <p className='text-2xl'>

@@ -9,11 +9,11 @@ const MiddleNavbar = () => {
     return (
         <div className='py-7 border-b'>
             <MaxwidthWrapper>
-                <div className='flex justify-between items-center'>
-                    <div className='text-5xl font-semibold text-neutral-600'>
+                <div className='flex md:flex-row flex-col md:gap-y-0 gap-y-3.5 justify-between items-center'>
+                    <div className='lg:text-5xl text-3xl font-semibold text-neutral-600'>
                         Ekka.com
                     </div>
-                    <div className='w-1/3 relative'>
+                    <div className='md:w-1/3 w-full relative'>
                         <input type='text' placeholder='search prodcuts...' className='w-full focus:outline-none pl-5 rounded-md py-2.5 border border-blue-500' />
                         <IoSearchOutline className='absolute text-neutral-600 text-2xl right-[5%] top-[25%]' />
                     </div>

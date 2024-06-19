@@ -40,7 +40,7 @@ const Banner = () => {
     ];
 
     return (
-        <div className='relative'>
+        <div className='relative '>
 
             <Swiper
                 spaceBetween={30}
@@ -50,23 +50,23 @@ const Banner = () => {
                     clickable: true,
                 }}
                 modules={[EffectFade, Navigation, Pagination]}
-                className="mySwiper h-[80vh]"
+                className="mySwiper relative lg:h-[80vh]"
             >
                 {data1.map((item) => (
-                    <SwiperSlide key={item.id} className='relative'>
-                        <Image alt='' className='brightness-50' src={item.image} layout='responsive' />
+                    <SwiperSlide key={item.id} >
+                        <Image alt='' className='brightness-50 w-full object-cover object-top' src={item.image} />
                         <MaxwidthWrapper>
-                            <div className='absolute text-neutral-200 top-1/3'>
-                                <h1 className='text-7xl font-semibold'>
+                            <div className='absolute text-neutral-200 md:top-1/3 top-10'>
+                                <h1 className='lg:text-8xl md:text-5xl text-2xl font-semibold'>
                                     {item.heading}
                                 </h1>
-                                <h1 className='text-5xl tracking-wider uppercase py-3.5'>
+                                <h1 className='lg:text-5xl md:text-3xl tracking-wider uppercase py-2 md:py-3.5'>
                                     Sale offer
                                 </h1>
-                                <p className='text-xl w-2/3'>
+                                <p className='md:text-xl text-sm sm:leading-normal leading-none w-2/3'>
                                     {item.description}
                                 </p>
-                                <div className='border w-1/5 py-2.5 mt-2 rounded-md cursor-pointer uppercase text-center bg-neutral-700'>
+                                <div className='border md:w-1/5 w-1/2 py-1.5 md:py-2.5 mt-2 rounded-md cursor-pointer uppercase text-center bg-neutral-700'>
                                     order now
                                 </div>
                             </div>
