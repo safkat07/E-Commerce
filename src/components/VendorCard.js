@@ -5,17 +5,23 @@ import img1 from '../../public/vendor1.jpg'
 import img2 from '../../public/vendor2.jpg'
 import img3 from '../../public/vendor3.jpg'
 import img4 from '../../public/vendor4.jpg'
-const VendorCard = () => {
+import { Rating } from '@smastrom/react-rating'
+const VendorCard = ({
+    name, totalProducts, image, sales, ratings
+}) => {
     return (
         <div className='flex flex-col py-5 cursor-pointer relative w-full h-full border justify-center items-center'>
             <div className='flex w-full p-3 items-center justify-start gap-3'>
-                <Image className='w-1/4' src={img} alt='adidas' />
+                <Image className='w-1/4' src={image} alt='adidas' />
                 <div className='flex w-full text-sm flex-col '>
-                    <p className='font-semibold'>Adidas</p>
-                    <p className='text-gray-500'>154 Products</p>
+                    <p className='font-semibold'>{name}</p>
+                    <p className='text-gray-500'>{totalProducts} Products</p>
                     <div className='flex text-gray-500 items-center justify-between'>
-                        <p>Ratings</p>
-                        <p className=''>Sales 954</p>
+                        <Rating
+                            style={{ maxWidth: 100 }}
+                            value={ratings}
+                        />
+                        <p className=''>Sales {sales}</p>
                     </div>
                 </div>
             </div>
