@@ -21,7 +21,7 @@ export default function Home() {
       <NewArrivals />
       <TopCategories />
       <LimitedOffers />
-      {/* <TopVendors /> */}
+      <TopVendors />
       {/* <Delivery /> */}
       {/* <SuperOffer /> */}
       {/* <NewTrending /> */}
