@@ -9,6 +9,8 @@ import limimg4 from '../../public/limited2.jpg'
 import img1 from '../../public/bagssCategory.jpg'
 import img2 from '../../public/chuttersnap-4JHMt29fvj8-unsplash.jpg'
 import img3 from '../../public/shoesCategory.jpg'
+
+
 const products = [
     {
         id: 1,
@@ -18,12 +20,7 @@ const products = [
         reviews: 4,
         bookings: 25,
         image: limimg3,
-        countdown: {
-            days: 456,
-            hours: 23,
-            minutes: 58,
-            seconds: 28,
-        },
+        targetDate: '2024-12-31T23:59:59'
     },
     {
         id: 2,
@@ -33,12 +30,7 @@ const products = [
         reviews: 5,
         bookings: 15,
         image: limimg4,
-        countdown: {
-            days: 300,
-            hours: 12,
-            minutes: 40,
-            seconds: 10,
-        },
+        targetDate: '2024-10-15T12:00:00'
     },
     {
         id: 3,
@@ -47,45 +39,22 @@ const products = [
         originalPrice: 350.00,
         reviews: 5,
         bookings: 15,
-        image: img1,
-        countdown: {
-            days: 300,
-            hours: 12,
-            minutes: 40,
-            seconds: 10,
-        },
+        image: img3,
+        targetDate: '2024-10-15T12:00:00'
     },
     {
-        id: 4,
+        id: 3,
         title: 'Stuffed Animal Elephant',
         price: 300.00,
         originalPrice: 350.00,
         reviews: 5,
         bookings: 15,
         image: img2,
-        countdown: {
-            days: 300,
-            hours: 12,
-            minutes: 40,
-            seconds: 10,
-        },
+        targetDate: '2024-10-15T12:00:00'
     },
-    {
-        id: 5,
-        title: 'Stuffed Animal Elephant',
-        price: 300.00,
-        originalPrice: 350.00,
-        reviews: 5,
-        bookings: 15,
-        image: img3,
-        countdown: {
-            days: 300,
-            hours: 12,
-            minutes: 40,
-            seconds: 10,
-        },
-    },
+
 ];
+
 const limitedOffer = [
     {
         id: 1,
@@ -95,12 +64,7 @@ const limitedOffer = [
         reviews: 4,
         bookings: 25,
         image: limimg1,
-        countdown: {
-            days: 456,
-            hours: 23,
-            minutes: 58,
-            seconds: 28,
-        },
+        targetDate: '2024-09-30T18:30:00'
     },
     {
         id: 2,
@@ -110,20 +74,13 @@ const limitedOffer = [
         reviews: 5,
         bookings: 15,
         image: limimg2,
-        countdown: {
-            days: 300,
-            hours: 12,
-            minutes: 40,
-            seconds: 10,
-        },
+        targetDate: '2024-11-01T10:00:00'
     },
 ];
-
 const LimitedOffers = () => {
     return (
         <div>
             <MaxwidthWrapper>
-
                 <div className='flex xl:flex-row flex-col justify-between items-center'>
                     <Slider sliderTitle={"Limited Offer"} products={products} />
                     <Slider sliderTitle={"Featured Items"} products={limitedOffer} />
