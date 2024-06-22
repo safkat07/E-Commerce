@@ -25,7 +25,7 @@ export default function Home() {
       <Delivery />
       <SuperOffer />
       <NewTrending />
-      {/* <ClientReview /> */}
+      <ClientReview />
       {/* <Brands /> */}
       {/* <InstagramFeeds /> */}
     </main>
