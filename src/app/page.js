@@ -22,7 +22,7 @@ export default function Home() {
       <TopCategories />
       <LimitedOffers />
       <TopVendors />
-      {/* <Delivery /> */}
+      <Delivery />
       {/* <SuperOffer /> */}
       {/* <NewTrending /> */}
       {/* <ClientReview /> */}
