@@ -26,8 +26,8 @@ export default function Home() {
       <SuperOffer />
       <NewTrending />
       <ClientReview />
-      {/* <Brands /> */}
-      {/* <InstagramFeeds /> */}
+      <Brands />
+      <InstagramFeeds />
     </main>
   );
 }
