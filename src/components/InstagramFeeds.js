@@ -22,7 +22,7 @@ const InstagramFeeds = () => {
                 <HeadingTitle title={"Instagram Feeds"} />
                 <PragraphText text={"Share Your Story With US"} />
                 <Marquee
-                    pauseOnHover={true}
+                    
                     gradient={false}
                     speed={50}
 
@@ -32,7 +32,7 @@ const InstagramFeeds = () => {
                             key={index}
                             src={img}
                             alt={`Instagram feed ${index + 1}`}
-                            className='size-60 ml-10 object-cover object-top'
+                            className='size-60 cursor-pointer ml-10 object-cover object-top'
                         />
                     ))}
                 </Marquee>

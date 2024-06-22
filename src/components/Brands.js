@@ -4,26 +4,22 @@ import HeadingTitle from './HeadingTitle';
 import Marquee from "react-fast-marquee";
 
 const Brands = () => {
-    const brands = ["Gucci", "Louis Vuitton", "Prada", "Chanel", "Hermès", "Versace", "Dior", "Burberry", "Armani", "Dolce & Gabbana", "Fendi", "Givenchy", "Balenciaga", "Yves Saint Laurent"];
+    const brands = ["Gucci", "Burberry", "Armani", "Dolce & Gabbana", "Fendi", "Givenchy", "Balenciaga", "Yves Saint Laurent"];
 
     return (
-        <div className='py-10'>
+        <div className='py-10 text-center'>
             <MaxwidthWrapper>
-                <Marquee
-                    pauseOnHover={true}
-                    gradient={false}
-                    speed={50}
-                    className="mt-5"
-                >
+                <div className='flex justify-center items-center  flex-wrap flex-row'>
+
                     {brands.map((brand, index) => (
                         <span
                             key={index}
-                            className="text-2xl font-semibold mx-4 whitespace-nowrap"
+                            className="text-2xl  font-semibold mx-4   whitespace-nowrap"
                         >
                             {brand}
                         </span>
                     ))}
-                </Marquee>
+                </div>
             </MaxwidthWrapper>
         </div>
     );
