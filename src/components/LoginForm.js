@@ -50,6 +50,12 @@ const LoginForm = () => {
                         or
                     </p>
                     <SocialLogin />
+                    <p className='text-center py-1.5'>
+                        or
+                    </p>
+                    <p className='text-center'>
+                        Don't have an account? <Link href='/signup' className='text-blue-600 '>Register Now</Link>
+                    </p>
                 </div>
             </div>
         </div>
