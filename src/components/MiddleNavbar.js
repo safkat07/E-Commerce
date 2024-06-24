@@ -25,22 +25,24 @@ const MiddleNavbar = () => {
                         <input type='text' placeholder='search prodcuts...' className='w-full focus:outline-none pl-5 rounded-md py-2.5 border border-blue-500' />
                         <IoSearchOutline className='absolute text-neutral-600 text-2xl right-[5%] top-[25%]' />
                     </div>
-                    <div className='flex  text-3xl gap-7 font-semibold'>
+                    <div className='flex relative  text-3xl gap-7 font-semibold'>
                         <FiUser onClick={showUserBox} className='cursor-pointer' />
+
                         <FaRegHeart />
                         <IoBagHandleOutline />
+                        {
+                            click && <div className='size-40 flex  rounded-lg flex-col justify-center border border-gray-500 items-center px-5 text-lg text-center  bg-white/90 backdrop-blur-md shadow-xl text-black right-0 left-0 top-10 z-[99] absolute'>
+                                <Link href="/login">Login</Link>
+                                <div className='border-b border-2 border-gray-700 w-full my-2.5'>
+
+                                </div>
+                                <Link href="/signup">Sign-up</Link>
+                            </div>
+                        }
                     </div>
                 </div>
             </MaxwidthWrapper>
-            {
-                click && <div className='size-40 flex flex-col justify-center border border-gray-500 items-center px-5 text-lg text-center  bg-white/90 backdrop-blur-md shadow-xl text-black right-[20%] z-[99] absolute'>
-                    <Link href="/login">Login</Link>
-                    <div className='border-b border-2 border-gray-700 w-full my-2.5'>
 
-                    </div>
-                    <Link href="/login">Sign-up</Link>
-                </div>
-            }
         </div>
     )
 }

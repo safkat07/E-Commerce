@@ -3,7 +3,7 @@ import '../globals.css'
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-    title: "Login Now",
+    title: "Elevate Mart",
     description: "Login now user"
 }
 
