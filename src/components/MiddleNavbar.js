@@ -11,7 +11,7 @@ const MiddleNavbar = () => {
             <MaxwidthWrapper>
                 <div className='flex md:flex-row flex-col md:gap-y-0 gap-y-3.5 justify-between items-center'>
                     <div className='lg:text-5xl text-3xl font-semibold text-neutral-600'>
-                    Elevate Mart
+                        Elevate Mart
                     </div>
                     <div className='md:w-1/3 w-full relative'>
                         <input type='text' placeholder='search prodcuts...' className='w-full focus:outline-none pl-5 rounded-md py-2.5 border border-blue-500' />
